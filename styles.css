@@ -1,0 +1,17 @@
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.results {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.game {
+  border: 5px solid grey;
+  width: 300px;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 10px;
+}
