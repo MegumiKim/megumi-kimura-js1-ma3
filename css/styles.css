@@ -1,0 +1,47 @@
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.results {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.game {
+  border: 5px solid grey;
+  background-color: rgba(49, 233, 147, 0.1);
+  width: 200px;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.loader {
+  margin: 50px;
+  border: 20px solid rgb(212, 226, 223);
+  border-top: 20px solid teal;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.error {
+  border: 2px solid darkred;
+  background-color: rgb(163, 3, 3, 0.1);
+  padding: 1rem;
+}
+
+h3 {
+  margin-top: 0;
+}
