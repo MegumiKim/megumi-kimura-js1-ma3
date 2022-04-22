@@ -6,14 +6,11 @@ const resultsContainer = document.querySelector(".results");
 async function getGames() {
   try {
     const response = await fetch(url);
-    const results = await response.json();
-    const games = results.results;
+    const data = await response.json();
+    const games = data.results;
 
     resultsContainer.innerHTML = "";
-    for (let i = 0; i < games.length; i++) {
-      if (i === 8) {
-        break;
-      }
+    for (let i = 0; i < 8; i++) {
       resultsContainer.innerHTML += `<div class='game'>
      <h3>#${i + 1} : ${games[i].name}</h3>
       Rating: ${games[i].rating} |
