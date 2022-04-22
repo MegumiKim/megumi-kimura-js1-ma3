@@ -13,8 +13,8 @@ async function getGames() {
     for (let i = 0; i < 8; i++) {
       resultsContainer.innerHTML += `<div class='game'>
      <h3>#${i + 1} : ${games[i].name}</h3>
-      Rating: ${games[i].rating} |
-      # of Tags: ${games[i].tags.length}
+      <p>Rating: ${games[i].rating}</p>
+      <p># of Tags: ${games[i].tags.length}</p>
       </div>
       `;
     }
